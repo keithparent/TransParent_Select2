@@ -48,5 +48,10 @@ function transparent_select2(){
 		
 }
 
-add_action('init', 'transparent_select2');
+if ( ! is_admin() ) {
+	add_action('init', 'transparent_select2');
+}
 
+
+
+/* EOF */
